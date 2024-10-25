@@ -2,18 +2,32 @@
 
 This template should help get you started developing with Vue 3 in Vite.
 
-## Recommended IDE Setup
+## Requirements
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+### Node.js
 
-## Customize configuration
+This template require specific version of node.js, refer to `.nvmrc` for the exact version.
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+If you're using [nvm](https://github.com/nvm-sh/nvm), you can run `nvm use` to automatically use the required version.
+
+### Bun
+
+This template is using [bun](https://bun.sh) as its package manager.
+
+```sh
+# Install bun
+npm install -g bun
+
+# Verify installation, should return `1.1.33` or equivalent
+bun -v
+```
+
+Alternatively, you can use `npm`, `pnpm`, or `yarn` at your own risk.
 
 ## Project Setup
 
 ```sh
-bun install
+bun install --frozen-lockfile
 ```
 
 ### Compile and Hot-Reload for Development
@@ -26,6 +40,12 @@ bun dev
 
 ```sh
 bun build
+```
+
+### Preview production build locally
+
+```sh
+bun preview
 ```
 
 ### Lint with [ESLint](https://eslint.org/)
